@@ -40,7 +40,12 @@
             <center><h3 class="box-title">CITA</h3></center>
         </div>
         <div class="box-body">
-            <form action="" method="POST">
+            <?php
+            include '../conexion/conexion.php';
+            conectar();
+            $res= consultar("SELECT id,concat(nombres,' ',apellidos) FROM personals");
+            ?>
+            <form action="../controladores/grabarCita.php" method="POST">
                 <div class="col-md-12">
                     <div class="panel panel-info">
                         <div class="panel-heading text-center">Ingresa los datos correctamente para tener una cita en BEAUTY SALON</div>
@@ -50,19 +55,19 @@
                                     <div class="col-xs-4">
                                         <div class="form-group">
                                             <label for="nombres">Nombres:</label>
-                                            <input type="text" name="nombres" class="form-control">
+                                            <input required type="text" name="nombres" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="form-group">
                                             <label for="apellidos">Apellidos:</label>
-                                            <input type="text" name="apellidos" class="form-control">
+                                            <input required type="text" name="apellidos" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="form-group">
                                             <label for="celular">Celular:</label>
-                                            <input type="text" name="celular" class="form-control">
+                                            <input required type="text" name="celular" class="form-control">
                                         </div>
                                     </div>
                                 </row>
@@ -70,9 +75,12 @@
                                 <div class="form-group col-md-offset-4 col-sm-4">
                                     <label for="personal_id" class="form-control-label">Estilista:</label>
                                     <select name="personal_id" id="medico" class="form-control">
-                                        <option value="1"> Kay Garland</option>
-                                        <option value="2"> Koky Belaunde</option>
-                                        <option value="3"> Diana Pertersen</option>
+                                        <?php
+                                        while(@$pers=mysqli_fetch_row($res))
+                                        {
+                                            echo "<option value='".$pers[0]."'>".$pers[1]."</option>";
+                                        }
+                                        ?>
                                     </select>
                                 </div>
                                 <div class="row col-md-12">
@@ -96,7 +104,7 @@
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="detalles">Detalles De Atencion:</label>
-                                    <textarea placeholder="&iquest;Qu&eacute; podemos hacer por T&iacute;?" name="detalles" class="form-control" rows="5" id="comment"></textarea>
+                                    <textarea required placeholder="&iquest;Qu&eacute; podemos hacer por T&iacute;?" name="detalles" class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                                 <div class="text-center col-md-12">
                                     <button class="btn btn-primary">Registrar</button>

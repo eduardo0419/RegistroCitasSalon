@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../">
+                <a class="navbar-brand" href="../index.html">
                     Beauty Sal&oacute;n
                 </a>
             </div>
@@ -44,7 +44,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Login</div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form" method="POST" action="">
+                        <form class="form-horizontal" role="form" method="POST" action="../controladores/login.php">
 
                             <div class="form-group">
                                 <label for="email" class="col-md-4 control-label">E-mail</label>
@@ -71,6 +71,11 @@
                                     </button>
                                 </div>
                             </div>
+                            <?php
+                             if (isset($_GET["S"])) {
+                                 echo '<div class="form-group" ><div class="col-md-8 col-md-offset-4" ><div class="alert alert-danger" ><strong > Alerta!</strong > Contrase & ntilde;a y / o Email incorrecto .</div ></div ></div >';
+                                }
+                            ?>
                         </form>
                     </div>
                 </div>

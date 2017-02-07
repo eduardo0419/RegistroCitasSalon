@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/controladores/grabarCita.php" line="4" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4f163476-20d4-40c9-9914-8c52684a4ac7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vistas/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vistas/registrarCita.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conexion/conexion.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vistas/login.php" afterPath="$PROJECT_DIR$/Vistas/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vistas/registrarCita.php" afterPath="$PROJECT_DIR$/Vistas/registrarCita.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RegistroCitasSalon.iws" />
@@ -28,23 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registrarCita.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vistas/registrarCita.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controladores/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vistas/login.php">
+      <file leaf-file-name="menu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vistas/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57194245">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.03057554">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,9 +59,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Vistas/registrarCita.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/conexion/conexion.php" />
+        <option value="$PROJECT_DIR$/controladores/login.php" />
         <option value="$PROJECT_DIR$/Vistas/login.php" />
+        <option value="$PROJECT_DIR$/controladores/grabarCita.php" />
+        <option value="$PROJECT_DIR$/Vistas/registrarCita.php" />
+        <option value="$PROJECT_DIR$/Vistas/menu.php" />
       </list>
     </option>
   </component>
@@ -134,6 +139,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RegistroCitasSalon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RegistroCitasSalon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controladores" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RegistroCitasSalon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RegistroCitasSalon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conexion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -145,6 +178,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\RegistroCitasSalon\controladores" />
       <recent name="C:\wamp\www\RegistroCitasSalon\js" />
       <recent name="C:\wamp\www\RegistroCitasSalon" />
     </key>
@@ -258,20 +292,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Sistemas Expertos/Controladores/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27517986">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1456471666000" expanded="true" signature="-1:-1" placeholder="select conca..trabajador..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sistemas Expertos/Modelo/Conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12230216">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sistemas Expertos/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28417265">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TAIS-FINAL(con librerias)/Controladores/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12230216">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TAIS-FINAL(con librerias)/Controladores/guardar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48920864">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="117" />
+          <folding>
+            <marker date="1456974128000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TAIS-FINAL(con librerias)/Controladores/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.091726616">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="66" />
+          <folding>
+            <marker date="1456471666000" expanded="true" signature="-1:-1" placeholder="select conca..trabajador..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3057554">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/registrarCita.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.516129">
+          <caret line="106" column="54" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1486444753069" expanded="true" signature="-1:-1" placeholder="SELECT id,na..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/grabarCita.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1528777">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding>
+            <marker date="1486444673527" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1486444673527" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1486444673527" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1486444673527" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vistas/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57194245">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42985612">
+          <caret line="52" column="118" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TAIS-FINAL(con librerias)/Vistas/Editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7643885">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <marker date="1456985028000" expanded="true" signature="-1:-1" placeholder="select Pro_d..procesos..." />
+            <marker date="1456985028000" expanded="true" signature="-1:-1" placeholder="select P_id,..perspectivas..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vistas/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03057554">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
